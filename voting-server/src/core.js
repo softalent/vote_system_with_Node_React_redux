@@ -29,6 +29,7 @@ export function next(state){
 	}
 }
 export function vote(voteState, entry){
+	// console.log(voteState);
 	return voteState.updateIn(
 		['tally', entry],
 		0,
